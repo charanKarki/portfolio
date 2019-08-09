@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Portfolio website</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- preloader -->
+    <style>
+
+       .preloader{
+           background: white;
+           width:100vw;
+           height:100vh;
+           position: fixed;
+           z-index:10000;
+       }
+        .preloader::before{
+            position: fixed;
+            background:url('img/25.svg');
+            content: "";
+            height: 100vh;
+            width: 100vw;
+            background-repeat: no-repeat;
+            z-index: 100000;
+            left: 50%;
+            top: 50%;
+        }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+     
+    window.onload= function(){
+      
+            $('.preloader').animate({
+                opacity:0,
+                
+            },2000,function(){
+                $('.preloader').hide()
+            })
+      
+    }
+    </script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" integrity="sha256-JPv5igMSqm2ztJxtjiup0q6NMWu7L3MbMn9FqyPgfdo=" crossorigin="anonymous" />    
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css"> 
+
+  </head>
+  <body >
+      <div class="preloader"></div>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark ">
+        <a href="#" class="navbar-brand "><i class="fa fa-apple  mx-3" aria-hidden="true"></i>PORTFOLIO WEBSITE</a>
+        <button class="btn  navbar-toggler" data-toggle="collapse" data-target='#navbarId' aria-controls="navbarId" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i> </button>
+    <div class="collapse navbar-collapse "id='navbarId'>
+        <ul class="navbar-nav ml-auto mr-5 ">
+            <li class="nav-item active"><a href="#header" class="nav-link">HOME</a></li>
+            
+            <li class="nav-item"><a href="#work" class="nav-link">PORTFOLIO</a></li>
+            <li class="nav-item"><a href="#recentPost" class="nav-link">BLOG</a></li>
+            <li class="nav-item"><a href="#services" class="nav-link">ABOUT</a></li>
+
+        </ul>
+    </div>
+    </nav>      
+<header id='header'>
+    <div class="header-content row">
+       
+                <div class="jumbotron col-sm-6 col-md-8">
+                        <P class="lead">NICE TO MEET</P>
+                        <h1 class=" display-3">I AM ALEX</h1>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ullam, error iure blanditiis assumenda deleniti tenetur ad porro doloribus iste! Lorem ipsum dolor sit amet.  .</p>
+                        <div class="button-section m-3">
+                                <button class="btn btn-md get-start" type="button">Get Started</button>
+                                <button class="btn btn-md watch-video btn-outline-success " type="button"><i class="fa fa-play pr-1" aria-hidden="true"></i> Watch video</button>
+                        </div>
+                        
+                    
+                </div>
+    
+    
+                <div class="img-wrap col-sm-6 col-md-4">
+                        <img src="./img/designer.jpg" alt="Alex" id="alex" >
+
+                </div>
+    
+    
+    </div>
+</header>
+<!-- scroll to top button -->
+<button class="btn btn-light rounded-circle scroll-to-top"><i class=" fa fa-arrow-up" aria-hidden="true"></i></button>
+<!-- numbers section -->
+
+<section class="our-ach">
+    <div >
+        <h1>20,203</h1>
+        <p>satisfied clients</p>
+    </div>
+    <div >
+        <h1>10,203</h1>
+        <p>hours worked</p>
+    </div>
+    <div >
+        <h1>2,790</h1>
+        <p>sapport task</p>
+    </div>
+</section>
+<!-- recent posts section -->
+<div class="container-fluid" id="recentPost">
+    <div class="title-section">
+            <h1 class="section-title">blog</h1>
+                <h1 class="section-main-title">RECENT POSTS</h1>
+                <h1 class="section-subtitle">our staff recent blog posts since last  24 hrs</h1>            
+    </div>
+    <div class="post-container" id='blog-slider'>
+        <div class="post">
+            <h1 class="post-title">POST TITLE</h1>
+            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam quam explicabo atque excepturi nulla ab laboriosam cum at vitae pariatur! Lorem ipsum, </p>
+            <h1 class="date">22 july , 12 hrs ago</h1>
+            <div class="media">
+                <img src="img/user4.jpg" alt="" class="user-img rounded-circle">
+                <div class="media-body">
+                    <h1>John doe</h1>
+                    <h2>UI/UX Designer</h2>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+                <h1 class="post-title">POST TITLE</h1>
+                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam quam explicabo atque excepturi nulla ab laboriosam cum at vitae pariatur!?</p>
+                <h1 class="date">22 july , 12 hrs ago</h1>
+                <div class="media">
+                    <img src="img/user1.jpg" alt="" class="user-img rounded-circle">
+                    <div class="media-body">
+                        <h1>John doe</h1>
+                        <h2>UI/UX Designer</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                    <h1 class="post-title">POST TITLE</h1>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam quam explicabo atque excepturi nulla ab laboriosam cum at </p>
+                    <h1 class="date">22 july , 12 hrs ago</h1>
+                    <div class="media">
+                        <img src="img/user2.jpg" alt="" class="user-img rounded-circle">
+                        <div class="media-body">
+                            <h1>John doe</h1>
+                            <h2>UI/UX Designer</h2>
+                        </div>
+                    </div>
+                </div>
+
+    </div>
+    
+</div>
+
+<!-- work section websites link -->
+<div id="work" class="container-fluid">
+    <div class="title-section">
+            <div class="title-section">
+                    <h1 class="section-title">WORK</h1>
+                        <h1 class="section-main-title">LETEST WORK</h1>
+                        <h1 class="section-subtitle">our work for clients .</h1>            
+            </div>
+    </div>
+    <div class="row container">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <img src="img/webpage1.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <img src="img/webpage2.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <img src="img/webpage3.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <img src="img/webpage4.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <img src="img/webpage5.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <img src="img/webpage6.jpg" alt="" class="w-100">
+            </div>
+    </div>
+</div>
+
+<!-- working peoples -->
+<div class="container" id="workingPeople">
+        <div class="title-section">
+                <h1 class="section-title">PEOPLE I WORK WITH</h1>            
+        </div>
+        <div class="row">
+                <ul class="users">
+                        <li><img src="img/user1.jpg" alt=""></li>
+                        <li><img src="img/user2.jpg" alt=""></li>
+                        <li><img src="img/user3.jpg" alt=""></li>
+                        <li><img src="img/user4.jpg" alt=""></li>
+                    </ul>
+            <div class="col-sm-12 col-md-6 col-lg-8 intro">
+                <div class="content-wrap">
+                        <h1>keanu williams</h1>
+                        <p class="lead">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam officiis aspernatur mollitia dolor dicta rerum perspiciatis soluta quo ipsa amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, odio!
+        
+                        </p>
+                        <button class="btn btn-md" type="button">contect</button>
+                        <ul class="social-links">
+                            <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-snapchat" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        </ul>
+                        
+                </div>
+                
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 user-img">
+                <img src="img/user1.jpg" alt="" class="w-100 rounded-circle">
+            </div>
+        </div>
+</div>
+
+<!-- our services section -->
+<div class="container-fluid" id="services">
+    <div class="title-section">
+        <div class="section-main-title">OUR SERVICES </div>
+        <div class="section-subtitle">what we do and what are our services</div>
+    </div>
+    <div class="row container">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <i class="fa fa-laptop" aria-hidden="true"></i>
+            <h1>web design</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eius labore, deleniti nostrum fuga consectetur sapiente tempora voluptatibus .</p>
+
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+           <i class="fa fa-500px" aria-hidden="true"></i>
+            <h1>logo design</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eius labore, deleniti nostrum fuga consectetur sapiente tempora voluptatibus .?</p>
+            
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <i class="fa fa-paint-brush" aria-hidden="true"></i>
+            <h1>illustration art</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eius labore, deleniti nostrum fuga consectetur sapiente tempora voluptatibus.</p>
+            
+        </div>
+    </div>
+</div>
+
+<!-- footer section -->
+<footer>
+<!-- social media links -->
+<div class="social-links">
+    <i class="fa fa-facebook" aria-hidden="true"></i>
+    <i class="fa fa-twitter" aria-hidden="true"></i>
+    <i class="fa fa-snapchat" aria-hidden="true"></i>
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+</div>
+<h1>my website &copy2019</h1>
+</footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+

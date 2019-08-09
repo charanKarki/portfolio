@@ -1,0 +1,54 @@
+//
+//  MEDIA QUERIES
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+
+
+//
+//  RESPOND ABOVE
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// @include respond-above(sm) {}
+@mixin respond-above($breakpoint) {
+    // Write the media query.
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  
+  
+}
+
+
+//
+//  RESPOND BELOW
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// @include respond-below(sm) {}
+@mixin respond-below($breakpoint) {
+    // Write the media query.
+    @media (max-width: ($breakpoint - 1)) {
+      @content;
+    }
+  
+  
+}
+
+
+//
+//  RESPOND BETWEEN
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// @include respond-between(sm, md) {}
+@mixin respond-between($lower, $upper) {
+
+
+    // Write the media query.
+    @media (min-width: $lower) and (max-width: ($upper - 1)) {
+      @content;
+    }
+  
+
+  
+  
+}
