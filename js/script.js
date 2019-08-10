@@ -15,7 +15,6 @@ $(document).ready(function () {
         else{
             $('.navbar').addClass('navbar-light bg-light').removeClass('navbar-dark')
             $('#navbarId .nav-item .nav-link,.navbar .navbar-brand').css('color','#06BCC1')
-
         }
     }
 
@@ -43,4 +42,20 @@ $(document).ready(function () {
               });
             
         })
+        $('.intro').slick({
+            slidesToShow:1,
+            asNavFor:'.users-img'
+        })
+
+        $('.users-img').slick({
+            slidesToShow:4,
+            draggable:false,
+            
+            swipe:false,
+            asNavFor:'.intro',
+            centerMode: true,
+            focusOnSelect: true
+        })
+        
+
 });

@@ -289,80 +289,99 @@ header{
         }
     }
 }
+#content{
+    h1{
+        font-size: $big_heading_font_size;
+        text-transform: capitalize;
+        color: $bigheadingcolor;
+        margin-bottom: 5% ;
 
+    }
+    .lead{
+        font-size:$para_font_size;
+        color: $blackparacolor;
+        margin-bottom: 20% ;
+    }
+    .btn{
+        border-radius: 2rem;
+        background: $bigheadingcolor;
+        padding: .5rem 2rem;
+        color: $whitecolor;
+        font-size: $button_text_size;
+        text-transform: uppercase;
+    }
+    .social-links{
+        list-style: none;
+        color: $buttoncolor;
+        display: inline-grid;
+        grid-template-columns: auto auto auto auto;
+        padding-left: 5%;
+        li{
+            // border: 1px solid $buttoncolor;
+            border-radius: 50%;
+            display: inline-block;
+            padding: .2rem .5rem;
+            margin-right: 20%;
+            font-size:$small_heading_font_size;
+            &:hover{
+               
+                color: $bigheadingcolor;
+                
+            }
+        }
+    }
+   
+}
+
+.users-img{
+    margin-bottom: 5%;
+    list-style: none;
+    padding-top:10px;
+    width: 100%; 
+    
+    
+    display: inline-block;
+    
+    .slick-list{
+        overflow: visible;
+    }
+    .slick-center.slick-current img{
+        opacity:1;
+        transform:scale(1.2,1.2);
+
+    }
+    img{
+        opacity: .5;
+        max-width: 30% !important;
+        border-radius: 50%;
+        margin:2%;
+        display: inline-block;
+        border-radius: 50%;
+    }
+        
+    
+    
+   
+}
 /*working people section*/
 #workingPeople{
+    width:90%;
     margin: 5% auto ;
     
-    .row{
-        .users{
-            margin-bottom: 5%;
-            list-style: none;
-            padding-top:10px; 
-            li{
-                width: 6%;
-                margin-right: 5%;
-                display: inline-block;
-                opacity: .5;
-                img{
-                    max-width: 100%;
-                    border-radius: 50%;
-
-                }
-                &:first-of-type{
-                    opacity: 1;
-                }
-            }
-            
-           
-        }
+    #user-detail{
+        
+        
+        
         .intro{
-            .content-wrap{
-                width: 60%;
-                margin: auto;
-                
-            h1{
-                font-size: $big_heading_font_size;
-                text-transform: capitalize;
-                color: $bigheadingcolor;
-                margin-bottom: 5% ;
+            .slick-slide{
 
+                .user-content{
+               
+                    margin: auto;
+                
             }
-            .lead{
-                font-size:$para_font_size;
-                color: $blackparacolor;
-                margin-bottom: 20% ;
             }
-            .btn{
-                border-radius: 2rem;
-                background: $bigheadingcolor;
-                padding: .5rem 2rem;
-                color: $whitecolor;
-                font-size: $button_text_size;
-                text-transform: uppercase;
-            }
-            .social-links{
-                list-style: none;
-                color: $buttoncolor;
-                display: inline-grid;
-                grid-template-columns: auto auto auto auto;
-                padding-left: 5%;
-                li{
-                    // border: 1px solid $buttoncolor;
-                    border-radius: 50%;
-                    display: inline-block;
-                    padding: .2rem .5rem;
-                    margin-right: 20%;
-                    font-size:$small_heading_font_size;
-                    &:hover{
-                       
-                        color: $bigheadingcolor;
-                        
-                    }
-                }
-            }
-            
-        }}
+        }
     }
 }
 
@@ -487,6 +506,7 @@ nav.navbar{
         }
 
     }
+
     .our-ach{
         width: 45%;
         padding: 0;
@@ -495,7 +515,19 @@ nav.navbar{
     #recentPost {
         margin: 35% auto;
         
-    }   
+    } 
+    .users-img{
+       
+        img{
+           
+            max-width: 70% !important;
+
+        }
+            
+        
+        
+       
+    }  
     #workingPeople .row{
         .users{
             li{
