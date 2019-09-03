@@ -252,52 +252,20 @@ header .img-wrap img {
   margin: 4% 0 0 0;
 }
 
-/*working people section*/
-#workingPeople {
-  margin: 5% auto;
-}
-
-#workingPeople .row .users {
-  margin-bottom: 5%;
-  list-style: none;
-  padding-top: 10px;
-}
-
-#workingPeople .row .users li {
-  width: 6%;
-  margin-right: 5%;
-  display: inline-block;
-  opacity: .5;
-}
-
-#workingPeople .row .users li img {
-  max-width: 100%;
-  border-radius: 50%;
-}
-
-#workingPeople .row .users li:first-of-type {
-  opacity: 1;
-}
-
-#workingPeople .row .intro .content-wrap {
-  width: 60%;
-  margin: auto;
-}
-
-#workingPeople .row .intro .content-wrap h1 {
+#content h1 {
   font-size: 30px;
   text-transform: capitalize;
   color: #204969;
   margin-bottom: 5%;
 }
 
-#workingPeople .row .intro .content-wrap .lead {
+#content .lead {
   font-size: 15px;
   color: rgba(126, 122, 122, 0.808);
   margin-bottom: 20%;
 }
 
-#workingPeople .row .intro .content-wrap .btn {
+#content .btn {
   border-radius: 2rem;
   background: #204969;
   padding: .5rem 2rem;
@@ -306,7 +274,7 @@ header .img-wrap img {
   text-transform: uppercase;
 }
 
-#workingPeople .row .intro .content-wrap .social-links {
+#content .social-links {
   list-style: none;
   color: #06BCC1;
   display: -ms-inline-grid;
@@ -316,7 +284,7 @@ header .img-wrap img {
   padding-left: 5%;
 }
 
-#workingPeople .row .intro .content-wrap .social-links li {
+#content .social-links li {
   border-radius: 50%;
   display: inline-block;
   padding: .2rem .5rem;
@@ -324,8 +292,45 @@ header .img-wrap img {
   font-size: 20px;
 }
 
-#workingPeople .row .intro .content-wrap .social-links li:hover {
+#content .social-links li:hover {
   color: #204969;
+}
+
+.users-img {
+  margin-bottom: 5%;
+  list-style: none;
+  padding-top: 10px;
+  width: 100%;
+  display: inline-block;
+}
+
+.users-img .slick-list {
+  overflow: visible;
+}
+
+.users-img .slick-center.slick-current img {
+  opacity: 1;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.users-img img {
+  opacity: .5;
+  max-width: 30% !important;
+  border-radius: 50%;
+  margin: 2%;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/*working people section*/
+#workingPeople {
+  width: 90%;
+  margin: 5% auto;
+}
+
+#workingPeople #user-detail .intro .slick-slide .user-content {
+  margin: auto;
 }
 
 #services {
@@ -445,6 +450,9 @@ footer h1 {
   }
   #recentPost {
     margin: 35% auto;
+  }
+  .users-img img {
+    max-width: 70% !important;
   }
   #workingPeople .row .users li {
     width: 10%;
